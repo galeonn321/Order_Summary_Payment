@@ -1,16 +1,23 @@
 @import url(https://fonts.google.com/specimen/Red+Hat+Display);
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
   background-color: #e0e8ff;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+body {
+  height: 50vh;
+  text-align: center;
 }
 
 body .top_background_image {
   width: 100%;
-  height: 45rem;
+  height: 50vh;
   background-color: sl(225, 100%, 94%);
 }
 
@@ -25,9 +32,9 @@ body section {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 35rem;
+  width: 30rem;
   top: 20%;
-  height: 30rem;
+  height: 45rem;
   background-color: white;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 10px #999999, -5px -5px 10px #ffffff;
@@ -43,12 +50,99 @@ body section h1 {
   font-weight: 900;
 }
 
-body section p {
+body section .description_text {
   font-size: 1rem;
   background-color: white;
   text-align: center;
   padding-top: 35px;
   font-family: 'Red Hat Display', sans-serif;
   color: #7280a7;
+}
+
+body section header {
+  width: 21rem;
+  height: 6rem;
+  margin: 1.8rem auto;
+  background-color: #f5f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+}
+
+body section header .annual_plan_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f7ff;
+  width: 100%;
+  border-radius: 10px;
+}
+
+body section header .svg_musical_icon__middleheader {
+  border-radius: 50px;
+  background-color: #f5f7ff;
+  padding-left: 20px;
+}
+
+body section header a {
+  background-color: #f5f7ff;
+  font-family: 'Red Hat Display', sans-serif;
+  text-align: center;
+}
+
+body section header .annual_plan {
+  font-weight: 900;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+body section header .change_anual_plan {
+  padding-left: 80px;
+}
+
+body section .proceed_to_payment_button {
+  background-color: #3829e0;
+  width: 21rem;
+  margin: auto;
+  height: 3rem;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+  font-weight: 400;
+  font-family: 'Red Hat Display', sans-serif;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 5px #3829e0, -5px -5px 0px #ffffff;
+          box-shadow: 1px 1px 5px #3829e0, -5px -5px 0px #ffffff;
+}
+
+body section .cancel_order {
+  font-family: 'Red Hat Display', sans-serif;
+  color: grey;
+  background-color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-shadow: 0px 2px 2px grey;
+}
+
+@media screen and (max-width: 600px) {
+  body section {
+    width: 375px;
+    height: 45rem;
+  }
+  .top_background_image {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
